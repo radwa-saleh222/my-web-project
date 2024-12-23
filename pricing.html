@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product table</title>
+    <link rel="stylesheet" href="pricingcss.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    
+header{
+    height: 70vh;
+    background-color: #df455fe3;
+    background-repeat: no-repeat;
+   
+}
+/*to remove the line under links*/
+a{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 500;
+
+}
+ul a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/*ul to remove the dot list*/
+ul{
+   
+    list-style: none;
+   
+}
+
+/*to make the navbar in one line*/
+#navbar{
+    display: flex;
+    /*for make big space between the logo and the links*/
+    justify-content: space-between;
+    /*for make the links in the middle*/
+    align-items: center;
+  
+}
+
+/*to make the logo small*/
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+   
+}
+.spaceUnderNavbar {
+    padding-top: 20%;
+    padding-right:60%;
+    padding-bottom: 50px;
+    padding-left: 20%;
+    color: #ffffff;
+ 
+ }
+ .body1 {
+    height: 200vh;
+ }
+ .body1 h1{
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+ }
+ table {
+    width: 90%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #0a67be;
+    padding: 40px;
+}
+th {
+    
+    background-color: #ffffff;
+}
+.body1 img{
+    object-fit: cover;
+    margin-right: 50px;
+    width: 350px;
+    height: 250px;
+}
+.body1 img:hover{
+    box-shadow: 0 0 10px 10px #df455fe3;
+   
+}
+ 
+ 
+
+</style>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <img src="ph/9.jpg" alt="pets lover logo">
+            <nav role="navigation">
+                <ul>
+                <li><a href="aftersign.html">Home</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="spaceUnderNavbar">
+            <h1>Pricing</h1>
+        </div>
+      </header>
+  
+  
+      <section class="body1">
+      <h1>Pricing table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Picture</th>
+                <th> Name </th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+            <tr>
+                <td><img src="ph/d1.jpeg" alt="Product no 1" onclick="screen"></td>
+                <td>French Bulldog</td>
+                <td>100 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/OIP.jpg" alt="Product no 2"></td>
+                <td>Golden Retriever</td>
+                <td>200 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/R.jpg" alt="Product no 3"></td>
+                <td>Labrador Retriever</td>
+                <td>300 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/OIP (2).jpg" alt="Product no 4"></td>
+                <td>British Shorthair</td>
+                <td>400 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/OIP (1).jpg" alt="Product no 5"></td>
+                <td>Ragdoll</td>
+                <td>500 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/download (3).jpg" alt="Product no 6"></td>
+                <td>Maine Coon</td>
+                <td>600 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/image7.jpg" alt="Product no 7"></td>
+                <td>Neon tetra</td>
+                <td>700 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/download (4).jpg" alt="Product no 8"></td>
+                <td>Goldfish</td>
+                <td>800 $</td>
+            </tr>
+            <tr>
+                <td><img src="ph/OIP (6).jpg" alt="Product no 9"></td>
+                <td>Guppy fish</td>
+                <td>900 $</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>

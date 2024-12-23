@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 300px;
+    background-color: #e28091;
+    background-repeat: no-repeat;
+   
+}
+a{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 500;
+
+}
+ul a:hover{
+    border-bottom: 2px solid black;
+}
+
+/*ul to remove the dot list*/
+ul{
+   
+    list-style: none;
+   
+}
+#navbar{
+    display: flex;
+    /*for make big space between the logo and the links*/
+    justify-content: space-between;
+    /*for make the links in the middle*/
+    align-items: center;
+  
+}
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+   
+}
+
+.content{
+margin-top: 150px;
+margin-left: 200px;
+font-size: 20px;
+color:white;
+}
+.content p{
+color:black;
+align-items: center;
+justify-content:space-between ;
+margin-top:50px ;
+}
+
+
+
+
+
+
+
+
+

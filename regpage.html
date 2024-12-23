@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forpetscare/SignUP</title>
+
+        <link rel="stylesheet" href="regcss.css">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(ph/55.jpg) center center/cover;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    width: 360px;
+    height: 455px;
+    background: transparents;
+    border: 2px solid gray;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+
+}
+h2{
+    margin-top: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+.input-box{
+    width: 100%;
+    height: 60px;
+    margin: 15px 0;
+    border-bottom: 2px solid white;
+}
+.input-box label{
+    color: white;
+    margin-top: 30px;
+    position: absolute;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+
+}
+.input-box input{
+    color: white;
+    width: 250px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+.remember-forget{
+    color: rgb(255, 255, 255);
+    font-size: .8em;
+    font-weight: 500;
+    /*top right /left bottom*/
+    margin: -5px 2px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forget input{
+    margin-right: 5px;
+    accent-color: rgb(223, 69, 95);
+}
+.remember-forget a{
+    color: rgba(210, 25, 56, 0.843);
+}
+.btn{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(223, 69, 95);
+    color: white;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.login-register {
+    margin: 25px 0 15px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+.login-register a{
+    color: rgba(210, 25, 56, 0.843);
+}
+
+
+</style>
+        <body>
+            <div class="wrapper">
+                <div class="form-box register" id="signup">
+                    <h2>Sign Up</h2>
+                    <form action="#" name="form">
+                        <div class="input-box">
+                            <span class="icon"></span>
+                            <input type="email" required>
+                            <label>Email :</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"></span>
+                            <input type="name" required>
+                            <label>Username :</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"></span>
+                            <input type="password" required name="fi">
+                            <label>Password :</label>
+                        </div>
+                        <div class="remember-forget">
+                            <label><input type="checkbox">Remember Me</label>
+                            
+                        </div>
+                        <button type="submit" class="btn" onclick="signup()">Sign Up</button>
+                        <div class="login-register">
+                            <p>Already have an account <a href="signin.html" class="register-link">SignIn</a></p>
+                            <p><a href="home1.html">< Home</a></p>
+
+                        </div>
+                        </div>
+                        </div>
+                      
+                   </form>
+                   <script>
+
+                    function signup() {
+                      var u = document.form.fi.value;
+ 
+                    if (u) {
+                    alert("Successfuly signed up");
+                    window.location.href = "aftersign.html";
+                     } else {
+                      alert("Please enter a value");
+                     }
+                     }
+
+
+
+                   </script>
+        </body>
+    </head>
+</html>

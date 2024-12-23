@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>For Pets Care</title>
+    
+       <!--<link rel="stylesheet" href="css1.css">--> 
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+    
+header{
+    height: 100vh;
+    background: url(ph/55.jpg) center center/cover;
+    background-repeat: no-repeat;
+   
+}
+/*to remove the line under links*/
+a{
+    text-decoration: none;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 500;
+
+}
+ul a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/*ul to remove the dot list*/
+ul{
+   
+    list-style: none;
+   
+}
+
+/*to make the navbar in one line*/
+#navbar{
+    display: flex;
+    /*for make big space between the logo and the links*/
+    justify-content: space-between;
+    /*for make the links in the middle*/
+    align-items: center;
+  
+}
+
+/*to make the logo small*/
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+   
+}
+header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    color: white;
+    
+  }
+  .content p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .formopen {
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    width: 130px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  .formopen:hover {
+    background: rgba(229, 53, 120, 0.542);
+  }
+ h1{
+   font-size: 40px; 
+ } 
+.container{
+    width: 1000px;
+    
+    
+}
+
+#information .button:hover{
+    background:  rgba(229, 53, 120, 0.542);
+}
+#information {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+#information .title{
+   text-align: left;
+   margin-top: 3rem; 
+   margin-bottom: 4rem;
+}
+.title h2{
+   font-size: 40px;
+   color:#383848;
+   margin-bottom: 20px;
+
+}
+#information .information-content{
+  display: flex;  
+  justify-content: space-between;
+}
+#information .information-content img{
+    width: 400px;
+
+}
+#information .information-content p{
+    color:#383848;
+    margin-bottom: 5px;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.information-content h3{
+    color: #383848;
+    font-size: 20px;
+
+}
+#lastsection{
+    margin-top: 2rem;
+    height: 75vh;
+    background-color: #df455fe3;
+    display: flex;
+
+}
+#lastsection .container{
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#lastsection .container p{
+    color: #383848;
+}
+#lastsection .container h2{
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+#title p{
+    width: 300px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.bton{
+    width: 120px;
+    height: 35px;
+    margin-top: 280px;
+    margin-left: 10px;
+    background: transparent;
+    color: #383848;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.bton:hover{
+    border-bottom:2px solid #383848;
+}
+
+#intouch h4{
+    color: #383848;
+    font-size: 19px; 
+}
+
+#links a{
+    color: #383848;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+@media(max-width:1000px){
+    body{
+        display: none;
+    }
+}
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+        <div id="navbar">
+            <img src="ph/9.jpg" alt="pets lover logo">
+            <nav role="navigation">
+                <ul>
+                <li><a href="home1.html">Home</a></li>
+                <li><a href="#gallary" onclick="showLoginAlert(event)" >Gallary</a></li>
+                <li><a href="about us.html"  >About Us</a></li>
+                <li><a href="#pricing" onclick="showLoginAlert(event)">Pricing</a></li>
+                <li><a href="#contactus" onclick="showLoginAlert(event)">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+          <h1>Highest Quality For Pets Care</h1>
+          <p>Here You Can Find The Best Way Of Care</p>
+          <a href="signin.html" class="formopen">Sign In</a>
+        </div>
+        </header>
+        <main>
+            <section id="information">
+                <div class="container">
+                    <div class="title">
+                        <h2>Our Services</h2>
+                    </div>
+                    <div class="information-content">
+                       <div>
+                        <p><h3>Vaccination</h3></p>
+                        <p>Like people, pets need vaccines. And pet vaccinations, like those for humans, 
+                            may sometimes require a booster to keep them effective. 
+                            The best way to stay on schedule with vaccinations for your dog or cat is to follow 
+                            the recommendations of a veterinarian you trust.</p>
+                              <br>
+                            <p><h3>Spay & Neuter</h3></p>
+                            <p>Spaying or neutering refers to a surgical procedure to render a dog or cat unable to produce litters of puppies or kittens. 
+                                In addition to halting reproduction, other health benefits include the prevention of certain types of cancers and behavioral problems that include roaming, 
+                                fighting for the attention of a mate and “marking” territory.</p>
+                                <br>
+                                <p><h3>Blood Test</h3></p>
+                                <p>This is the most common blood test performed on pets and people. A CBC gives information on hydration status,
+                                     anemia, infection, the blood’s clotting ability, and the ability of the immune system to respond. 
+                                     This test is essential for pets with fevers, vomiting, diarrhea, weakness, pale gums, or loss of appetite.
+                                     If your pet needs surgery, a CBC can detect some bleeding disorders or other unseen abnormalities.</p>
+                                     <br>
+                       </div>
+                       <img src="ph/dogs.png" alt="dog"> 
+                    </div>
+                </div>
+            </section>
+            <section id="lastsection">
+                <div class="container">
+                    <div id="title">
+                        <h2>About Pets Care</h2>
+                        <p>Pets Care Services is a locally owned and operated company in Qatar which wants to help people with their pets the standard of care that themselves expect and would give their pet themselves.
+                            We love pets! And very quickly your pet becomes a part of our family too.
+                            Our aim is for your pet to want to spend time with us and look forward to seeing us turn up at the door.</p>
+                            <button type="button" class="bton" onclick="showLoginAlert(event)">Learn More</button>
+                    </div>
+                    <div id="links">
+                        <h2>Quick Links</h2>
+                        <p><a href="home1.html">Home</a></p> <br>
+                        <p><a href="#gallary" onclick="showLoginAlert(event)">Gallary</a></p><br>
+                        <p><a href="#aboutus" onclick="showLoginAlert(event)">About Us</a></p><br>
+                        <p><a href="#pricing" onclick="showLoginAlert(event)">Pricing</a></p><br>
+                        <p><a href="#contactus" onclick="showLoginAlert(event)">Contact Us</a></p><br>
+                       
+                    </div>
+                    <div id="intouch">
+                        <h2>Get In Touch</h2>
+                        <p><h4>Address: PO Box 200329 Doha – Qatar.</h4></p> 
+                        <br><br>
+                        <p><h4>Mobile: +974 3322 7664</h4></p>
+                        <br><br>
+                        <p><h4>Landline: +974- 4488 1036</h4></p>
+                        <br><br>
+                        <p><h4>E-mail: Info@petscare-qa.com</h4></p>
+
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <script>
+            function showLoginAlert(event) {
+            event.preventDefault();
+            alert("Sign in first");
+          }
+        </script>
+    </body>
+</html>
